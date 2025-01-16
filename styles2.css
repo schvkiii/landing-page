@@ -107,3 +107,48 @@ body {
     color: white;
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    body {
+        height: auto; /* Allow scrolling for smaller devices */
+        padding: 20px; /* Add some breathing room on the sides */
+    }
+
+    .main-container {
+        width: 90%; /* Fit most of the screen's width */
+        margin: 0 auto; /* Center-align the container */
+    }
+
+    .main-container:nth-of-type(2) {
+        width: 100%; /* Use full width for better visibility */
+        height: auto; /* Allow dynamic height */
+        padding: 15px; /* Reduce padding slightly */
+    }
+
+    .logo-container img {
+        width: 120px; /* Scale down the image size */
+        height: 120px;
+    }
+
+    .logo-container p {
+        font-size: 1.2rem; /* Adjust main text size */
+        margin: 8px 0; /* Provide better spacing */
+    }
+
+    .logo-container p:nth-of-type(2) {
+        font-size: 0.9rem; /* Ensure subtitle is legible */
+    }
+
+    .links-container {
+        gap: 10px; /* Reduce spacing between links */
+    }
+
+    .link {
+        font-size: 1rem; /* Increase link text size */
+        padding: 10px; /* Adjust padding for better clickability */
+    }
+
+    .link:hover {
+        transform: none; /* Simplify hover effect on mobile */
+    }
+}
