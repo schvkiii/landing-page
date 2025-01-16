@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/Background2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    width: 5%;
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+}
+
+.main-container a:nth-child(1) {
+    color: white;
+    text-decoration: none;
+}
+
+.main-container:nth-of-type(2) {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    display: block;
+}
+
+.logo-container p {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.logo-container p:nth-of-type(2) {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.link {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.link a {
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f5a623;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 30%;
+    }
+
+    .main-container:nth-of-type(2) {
+        height: auto;
+    }
+
+    .logo-container {
+        padding: 20px;
+    }
+
+    .links-container {
+        gap: 10px;
+    }
+
+    .link {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
